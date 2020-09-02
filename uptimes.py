@@ -1,10 +1,10 @@
 import datetime
 
-class Uptime:
+class Uptimes:
     def __init__(self):
         self.start_time = datetime.datetime.now()  # Timestamp when it initializes.
 
-    def uptime(self):
+    def uptimes(self):
         now = datetime.datetime.now()  # Timestamp when uptime function runs.
         delta = now - self.start_time
         hours, remainder = divmod(int(delta.total_seconds()), 3600)
