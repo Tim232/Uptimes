@@ -5,8 +5,14 @@ A small python3 package for uptimes.
 
 ## How to Install :
 
+Windows
 ```shell
-pip install uptimes
+python -m pip install -U uptimes
+```
+
+Linux
+```shell
+python3 -m pip3 install -U uptimes
 ```
 
 ## Usage :
