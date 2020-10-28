@@ -6,17 +6,17 @@ A small python3 package for uptimes.
 ## How to Install :
 
 ```shell
-pip install uptimes==0.1.0
+pip install uptimes
 ```
 
 ## Usage :
 ```py
-import uptimes.uptimes
+import uptimes
 import time
 
 time.sleep(10)
-print(uptimes.uptimes.uptimes())
-print(uptimes.uptimes.raw_uptimes())
+print(uptimes.uptimes())
+print(uptimes.raw_uptimes())
 ```
 ## Output:
 ```
