@@ -12,6 +12,9 @@ class Uptime:
     def __repr__(self):
         return f"<Uptime {self.raw['days']} Days {self.raw['hours']} Hours {self.raw['minutes']} Minutes {self.raw['seconds']} Seconds>"
     
+    def reset(self):
+        self.start_time = datetime.datetime.now()
+
     @property
     def raw(self):
         now = datetime.datetime.now()  # Timestamp when uptime function runs.
@@ -29,6 +32,6 @@ class Uptime:
     
     @property
     def uptimes(self):
-        stamp = self.raw()
+        stamp = self.raw
         uptime_stamp = f"**{stamp['days']}** days **{stamp['hours']}** hours **{stamp['minutes']}** minutes **{stamp['seconds']}** seconds"
         return uptime_stamp
